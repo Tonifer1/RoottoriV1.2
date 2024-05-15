@@ -26,7 +26,8 @@ namespace RoottoriV1._2
             bundles.Add(new StyleBundle("~/Content/css").Include(
                       "~/Content/bootstrap.css",
                       "~/Content/gijgo/combined/gijgo.css",
-                      "~/Content/site.css"));
+                      "~/Content/custom.css",
+                      "~/Content/Site.css"));
         }
     }
 }

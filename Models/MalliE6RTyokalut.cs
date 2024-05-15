@@ -11,7 +11,7 @@ namespace RoottoriV1._2.Models
 {
     using System;
     using System.Collections.Generic;
-    
+
     public partial class MalliE6RTyokalut
     {
         public int TyokaluPaikka { get; set; }
@@ -19,8 +19,6 @@ namespace RoottoriV1._2.Models
         public Nullable<int> Kesto { get; set; }
         public Nullable<System.DateTime> Paivitys { get; set; }
         public bool Kuitattu { get; set; } // Lisätty ominaisuus kuitauksen seuraamiseksi
-
-
         public virtual KirjastoTyokalut KirjastoTyokalut { get; set; }
     }
 }
