@@ -19,17 +19,17 @@ namespace RoottoriV1._2.Controllers
         {
             var viestit = db.Viestit.OrderByDescending(v => v.ViestiId).ToList();
             return View(viestit);
-
+            //Viestit lajitellaan ID:n mukaan laskevassa järjestyksessä
 
         }
 
 
         public ActionResult Search(string searchTerm)
         {
-            // Jaa hakusanojen merkkijono välilyöntien perusteella ja poista tyhjät merkkijonot
+            // Jaetaan hakusanojen merkkijono välilyöntien perusteella ja poistetaan tyhjät merkkijonot
             string[] searchTerms = searchTerm.Split(new char[] { ' ' }, StringSplitOptions.RemoveEmptyEntries);
 
-            // Luo lista, johon tallennetaan löydetyt viestit
+            // Luodaan lista, johon tallennetaan löydetyt viestit
             List<Viestit> foundMessages = new List<Viestit>();
 
             // Etsi viestejä, jotka sisältävät jokaisen hakusanan
@@ -39,10 +39,10 @@ namespace RoottoriV1._2.Controllers
                 foundMessages.AddRange(messages);
             }
 
-            // Poista mahdolliset duplikaatit
+            // Poistaa mahdolliset duplikaatit
             var uniqueMessages = foundMessages.Distinct().ToList();
 
-            // Tarkista, onko löydettyjä viestejä
+            // Tarkistaa, onko löydettyjä viestejä
             if (uniqueMessages.Count == 0)
             {
                 // Jos viestejä ei löydy, palauta kaikki viestit järjestettynä ViestiId:n mukaan laskevassa järjestyksessä
@@ -51,7 +51,7 @@ namespace RoottoriV1._2.Controllers
             }
             else
             {
-                // Jos viestejä löytyy, palauta ne Index2-näkymään
+                // Jos viestejä löytyy, palauttaa ne Viestit Index2-näkymään
                 return View("Index2", uniqueMessages);
             }
         }
