@@ -23,7 +23,6 @@ namespace RoottoriV1._2.Controllers
 
         }
 
-
         public ActionResult Search(string searchTerm)
         {
             // Jaetaan hakusanojen merkkijono välilyöntien perusteella ja poistetaan tyhjät merkkijonot
@@ -54,6 +53,20 @@ namespace RoottoriV1._2.Controllers
                 // Jos viestejä löytyy, palauttaa ne Viestit Index2-näkymään
                 return View("Index2", uniqueMessages);
             }
+        }
+
+        //Toiminnallisuus viestien luku kuittaukselle @Jani
+        // GET: LueViestit
+        public ActionResult LueViestit()
+        {
+            var lukukuittaus = db.Viestit.Where(v => v.Luettu == 0).ToList();
+            foreach (var viesti in lukukuittaus)
+            {
+                viesti.Luettu = 1;
+            }
+            db.SaveChanges();
+
+            return RedirectToAction("Index");
         }
 
         // GET: Viestit/Details/5
