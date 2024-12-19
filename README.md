@@ -3,11 +3,12 @@ Roottorit Assist is a comprehensive application designed to assist and guide emp
 The application focuses on improving workflows, communication, and safety in CNC machining and related activities.
 
 # Key Features
-Simplified CNC Setup: Streamlines the process of configuring CNC machines, making it easier and faster for operators.
-Enhanced Communication: Improves the flow of information between team members, ensuring everyone stays informed and aligned.
-Improved Safety: Promotes workplace safety by reducing human errors and providing clear instructions for tasks.
-Increased Efficiency: Boosts productivity by optimizing task execution and minimizing setup time.
-Error Reduction: Helps to prevent costly mistakes by providing detailed guidance for each step of the process.
+***Simplified CNC Setup***: Streamlines the process of configuring CNC machines, making it easier and faster for operators.
+***Enhanced Communication***: Improves the flow of information between team members and supervisors, ensuring everyone stays informed and aligned.
+
+***Improved Safety***: Promotes workplace safety by reducing human errors and providing clear instructions for tasks.
+***Increased Efficiency***: Boosts productivity by optimizing task execution and minimizing setup time.
+***Error Reduction***: Helps to prevent costly mistakes by providing detailed guidance for each step of the process.
 
 # Benefits
 Empowers employees with intuitive tools to perform tasks more effectively.
