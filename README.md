@@ -18,4 +18,4 @@ Contributes to overall operational efficiency and cost savings.
 # Target Users
 This application is designed specifically for professionals working in CNC machining, machine shops, and related industries.
 
-[Click Here](https://roottoriapp.azurewebsites.net/Home/Index)
+[Visit Roottori Assist Application Home Page](https://roottoriapp.azurewebsites.net/Home/Index)
