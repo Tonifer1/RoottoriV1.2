@@ -18,5 +18,6 @@ Contributes to overall operational efficiency and cost savings.
 
 # Target Users
 This application is designed specifically for professionals working in CNC machining, machine shops, and related industries.
+The application is deployed on Azure.
 
 [Visit Roottori Assist Application Home Page](https://roottoriapp.azurewebsites.net/Home/Index)
